@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: #454e4e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hoved {
+  background-color: white;
+  height: 70%;
+  aspect-ratio: 16/9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hovedbilde {
+  width: 100%;
+  height: 100%;
+  background-color: #454e4e;
+  background-position: center;
+  background-size: cover;
+}
+
+.knapper {
+  width: 90%;
+  height: 20%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.venstre,
+.høyre {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+  opacity: 50%;
+}
+
+.bunnknapper {
+  width: 200px;
+  height: 17px;
+  bottom: 20px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bunnknapp {
+  border-radius: 50%;
+  width: 17px;
+  height: 17px;
+  background-color: #fff;
+  opacity: 50%;
+  transition: 0.2s;
+}
+
+.venstre:hover,
+.høyre:hover,
+.bunnknapp:hover {
+  cursor: pointer;
+  opacity: 100%;
+}
